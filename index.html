@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Alifa Farma</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="public/img/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="public/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <!-- Responsive navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-5">
+        <a class="navbar-brand" href="#!">Alifa Farma Grup</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Layanan Kami</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Kontak Kami</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Page Content-->
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div id="call-cs">
+        <ul id="ul-call-cs">
+            <li><a href="#">Konsultasi Apoteker</a></li>
+            <li><a href="#">Order via WhatsApp</a></li>
+            <li><a href="#">Order via OLShopApp</a></li>
+        </ul>
+        <button id="btn-call-cs"><i class="bi bi-question-octagon" style="font-size: 2rem; color: #6610f2;"></i></button>
+    </div>
+    <script>
+        let tombol = $('#btn-call-cs');
+        let menu = $('#ul-call-cs');
+        
+        tombol.click(()=>{
+            menu.toggle();
+        });
+    </script>
+    <!-- Bagian akhir button tanda tanya -->
+
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">Tagline dari sebuah apotik</h1>
+            <p>Penjelasan dari sejarah, visi dan misi, serta produk dan layanan apa saja pada apotik</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Info lebih lengkap
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tagline dari Apotik Alifa Farma Grup</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            isi,, sejarah dari apotik, penjelasan tentang visi dan misi. kemudian langkah apa selanjutnya dari owner untuk kemajuan apotik.
+        </div>
+        <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        </div>
+        </div>
+    </div>
+</div>
+<!-- bagian dari content-row-1 -->
+    <!-- Bagian akhir Content baris 1-->
+
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body"><p class="text-white m-0">Bisa di isi dengan keterangan dari produk atau dengan yang lain.</p></div>
+    </div>
+    <!-- Content baris 2-->
+
+    <div class="row gx-4 gx-lg-5">     
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <!-- <div class="mx-auto">
+                element foto ke posisi center
+                <img src="/public/alat-kesehatan/omron.jpg" style="border: none;" class="img-thumbnail" alt="alkses-3">
+                </div> -->
+                <div class="card-body">
+                    <h2 class="card-title">Barang Satu</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                </div>
+                <div class="card-footer mx-auto"> 
+                    <!-- class = mx-auto membuat element berpindah ke posisi center -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#barang1">
+                        Detail Barang
+                    </button>
+                    <!-- modal -->
+                    <div class="modal fade" id="barang1" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel3">Barang ke 1 - barang ke 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Merk :
+                                Harga :
+                                Tahun Produksi :
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <!-- <div class="mx-auto">
+                element foto ke posisi center
+                <img src="/public/alat-kesehatan/omron.jpg" style="border: none;" class="img-thumbnail" alt="alkses-3">
+                </div> -->
+                <div class="card-body">
+                    <h2 class="card-title">Barang Dua</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                </div>
+                <div class="card-footer mx-auto"> 
+                    <!-- class = mx-auto membuat element berpindah ke posisi center -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#barang2">
+                        Detail Barang
+                    </button>
+                    <!-- modal -->
+                    <div class="modal fade" id="barang2" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel3">Barang ke 2 - barang ke 2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Merk :
+                                Harga :
+                                Tahun Produksi :
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="mx-auto">
+                <!-- element foto ke posisi center -->
+                <img src="public/img/omron.jpg" style="border: none;" class="img-thumbnail" alt="alkses-3">
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Barang Tiga</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                </div>
+                <div class="card-footer mx-auto"> 
+                    <!-- class = mx-auto membuat element berpindah ke posisi center -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#barang3">
+                        Detail Barang
+                    </button>
+                    <!-- modal -->
+                    <div class="modal fade" id="barang3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel3">Tensi Digital - Omron</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Merk :
+                                Harga :
+                                Tahun Produksi :
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end modal -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Build With Muhammad Winanda</p></div>
+</footer>
+
+<!-- // Bootstrap core JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- // Core theme JS -->
+<!-- <script src="/page/dist/js/scripts.js"></script> -->
+</body>
+</html>
