@@ -210,10 +210,8 @@
     </div>
     <!-- end page Content baris 3 -->
 
-    <!-- start page google maps -->
-    <!-- API Google Maps -->
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
 
+    <!-- start page google maps -->
     <!-- page cabang Banjarbaru -->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
         <div class="col-lg-5">
@@ -226,29 +224,6 @@
         <div id="mapAlifaBjb" class="col-lg-7" style="border-radius: 5%; border: 2px solid black; height: 400px;"><img class="img-fluid rounded mb-4 mb-lg-0">
         </div>
     </div>
-
-    <script>
-        function mapAlifaBjb() {
-            const koordinatAlifaBjb = new google.maps.LatLng(-3.458733,114.848275)
-
-            var propertiPeta = {
-            center: koordinatAlifaBjb,
-            zoom:20,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-            };
-        
-            var peta = new google.maps.Map(document.getElementById("mapAlifaBjb"), propertiPeta);
-
-            // membuat Marker
-            var marker=new google.maps.Marker({
-                position: koordinatAlifaBjb,
-                map: peta
-            });
-        }
-
-        // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', mapAlifaBjb());
-    </script>
 
     <!-- page cabang Martapura -->
     <div class="row gx-4 gx-lg-5 align-items-center my-5">
@@ -277,13 +252,37 @@
 
             // membuat Marker
             var marker=new google.maps.Marker({
-                position: koordinatAlifaBjb,
+                position: koordinatAlifaMtp,
                 map: peta
             });
         }
 
+        function mapAlifaBjb() {
+            const koordinatAlifaBjb = new google.maps.LatLng(-3.458733,114.848275)
+
+            var propertiPeta = {
+            center: koordinatAlifaBjb,
+            zoom:20,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+        
+            var peta = new google.maps.Map(document.getElementById("mapAlifaBjb"), propertiPeta);
+
+            // membuat Marker
+            var marker=new google.maps.Marker({
+                position: koordinatAlifaBjb,
+                map: peta
+            });
+        }
+        
+        function gabunganMaps() {
+            return mapAlifaBjb(), mapAlifaMartapura();
+        }
+
         // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', mapAlifaMartapura());
+        // google.maps.event.addDomListener(window, 'load', mapAlifaMartapura());
+    </script>
+    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjeNAV-4FNLg5jmwAtvflzb74lfb2LuAM&callback=gabunganMaps">
     </script>
     <!-- end page Google Maps -->
 </div>
